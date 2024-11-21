@@ -33,9 +33,21 @@
         </div>
         
         <div class="hyperlinks-container">
-            <a href="https://oic-vbcs-oic-vb-axetemueuybx.builder.me-dubai-1.ocp.oraclecloud.com/ic/builder/design/Council_Portal/1.0/preview/webApps/citycouncil/" target="_blank">Register Pet</a>
+            <a href="https://oic-vbcs-oic-vb-axetemueuybx.builder.me-dubai-1.ocp.oraclecloud.com/ic/builder/design/Council_Portal/1.0/preview/webApps/citycouncil/?page=shell&shell=petregistration">Register Pet</a>
+            <a href="#" onclick="return confirmRedirect('https://oic-vbcs-oic-vb-axetemueuybx.builder.me-dubai-1.ocp.oraclecloud.com/ic/builder/design/Council_Portal/1.0/preview/webApps/citycouncil/?page=shell&shell=petregistration')">
+                Register Your Pet
+             </a>
+             <script>
+                function confirmRedirect(url) {
+                   if (confirm("You are about to leave our site and go to the pet registration page. Do you wish to proceed?")) {
+                       window.open(url, '_blank');
+                       return false;
+                   }
+                   return false;
+                }
+                </script>
         </div>
-    </div>
+
     <div>
         <h1>Dog Registration Fees</h1>
         <div class="table">
