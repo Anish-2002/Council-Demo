@@ -93,7 +93,21 @@
         <div class="title-subtitle">
             <div class="title"><h1>Bins, Rubbish and Recycling</h1></div>
              </div>
-        
+             <div class="hyperlinks-container">
+                <a href="#" onclick="return confirmRedirect('https://oic-vbcs-oic-vb-axetemueuybx.builder.me-dubai-1.ocp.oraclecloud.com/ic/builder/rt/WasteManagement/live/webApps/requestnewbins/')">
+                    Request a Bin
+                 </a>
+                 <script>
+                    function confirmRedirect(url) {
+                       if (confirm("You are about to leave this site and go to the council Request a new bin. Do you wish to proceed?")) {
+                           window.open(url, '_blank');
+                           return false;
+                       }
+                       return false;
+                    }
+                    </script>   
+            
+            </div>
        
     </div>
 
